@@ -2,14 +2,19 @@
 src wolverine beats spidey https://youtu.be/BUg4KhMrbyA?t=73
 */
 * {
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
   }
   
   body {
     align-items: center;
     background-image: url("images/CFBackground.jpg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
@@ -19,7 +24,10 @@ src wolverine beats spidey https://youtu.be/BUg4KhMrbyA?t=73
   
   h1 {
     text-transform: uppercase;
-    align-items: center
+    justify-content: center;
+    text-size-adjust: 24px;
+    text-emphasis-style: bold;
+
   }
   
   .game-board {
@@ -51,18 +59,19 @@ src wolverine beats spidey https://youtu.be/BUg4KhMrbyA?t=73
   }
   
   .cell:not(.row-top).red::after {
-    background-image: url("images/spideyweb.png");
+    background-image: url("images/web2.jpg");
   }
   .cell:not(.row-top).yellow::after {
-    background-image: url("images/claws.jpg");
+    background-image: url("images/wolverine\ \(4\).jpg");
   }
-  
-  .cell:not(.row-top).red.win {
-    background-image: url("images/spideyweb.png");
+
+   .cell:not(.row-top).red.win {
+    background-image: url("images/web2.jpg");
+    background-clip: url(https://youtu.be/VfX8n14gXeo?t=243)
   }
   
   .cell:not(.row-top).yellow.win {
-    background-image: url("images/claws.jpg");
+    background-image: url("images/wolverine\ \(4\).jpg");
   }
   
   .cell.row-top {
@@ -74,12 +83,12 @@ src wolverine beats spidey https://youtu.be/BUg4KhMrbyA?t=73
   }
   
   .cell.row-top.red::after {
-    background-image: url("images/spideyweb.png");
+    background-image: url("images/web2.jpg");
     border: 3px solid black;
   }
   
   .cell.row-top.yellow::after {
-    background-image: url("images/claws.jpg");
+    background-image: url("images/wolverine\ \(4\).jpg");
     border: 3px solid black;
   }
   
@@ -93,7 +102,7 @@ src wolverine beats spidey https://youtu.be/BUg4KhMrbyA?t=73
   .reset {
     background-color: #4370F1;
     border-radius: 5px;
-    border: none;
+    border: 1,1,1;
     color: white;
     cursor: pointer;
     display: block;
